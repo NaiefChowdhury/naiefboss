@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Scroll On Animation </title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+
+
+<div class="container"><br><br><br><br>
+
+  <div class="row text-white" >
+
+
+<div class="hello" id="card-one">
+  <div class="card" >
+    <img class="card-img-top" src="alem2.png" alt="Card image" style="width:25%; ">
+    <div class="card-body text-center">
+      <h4 class="card-title"> Nazem Ahmed Chowdhury </h4>
+      <p class="card-text"> Hello Friends, You Are Welcome In My Creation. </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="hello" id="card-two">
+  <div class="card">
+    <img class="card-img-top" src="naief.jpg" alt="Card image" style="width:25%;">
+    <div class="card-body text-center">
+      <h4 class="card-title"> Naief Chowdhury </h4>
+      <p class="card-text"> Hello Friends, You Are Welcome In My Creation. </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="hello" id="card-three">
+  <div class="card">
+    <img class="card-img-top" src="girl.png" alt="Card image" style="width:25%;">
+    <div class="card-body text-center">
+      <h4 class="card-title text-center"> Mehenaz Afrin Agroti </h4>
+      <p class="card-text"> Hello Friends, I Am A Girl And I Am So Clever. </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+
+
+  </div> <br> <br>
+
+</div>
+
+
+
+
+
+
+     <div class="text-aqua container-fluid text-center" style=" width: 83%; height: 400px; background-color: blue; color: aqua; ">
+
+<h1 style="line-height: 400px; font-size: 45px;" id="textanimate"> WELCOME IN NAIEF CHOWDHURY'S CREATION </h1>
+         
+
+     </div>
+
+
+
+
+
+
+
+<div class="container"><br><br>
+
+  <div class="row text-white" >
+
+
+<div class="col-lg-4 col-md-4 col-sm-4 " id="card-four">
+  <div class="card" >
+    <img class="card-img-top" src="nafiz.jpg" alt="Card image" style="width:100%">
+    <div class="card-body text-center">
+      <h4 class="card-title" style="line-height: 40px;"> Nafiz Jaman Chowdhury </h4>
+      <p class="card-text"> Hello Friends, Let Me Introduce With You. I Am The Boss To Sleep Anytime In Anywhere.  </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-4 " id="card-five">
+  <div class="card">
+    <img class="card-img-top" src="samin.jpg" alt="Card image" style="width: 100%">
+    <div class="card-body text-center">
+      <h4 class="card-title"> Zibon Chowdhury </h4>
+      <p class="card-text"> Hello Friends, I Think About Many Businesses But I Don't Do Any Business. </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-4 " id="card-six">
+  <div class="card">
+    <img class="card-img-top" src="img.png" alt="Card image" style="width:100%">
+    <div class="card-body text-center">
+      <h4 class="card-title"> Samin Yasar Chowdhury </h4>
+      <p class="card-text"> Hello Friends, You Are Welcome In My Creation. </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+
+
+  </div> <br> <br> <br> <br> <br>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+$(window).scroll(function(){
+
+
+var positiontop = $(document).scrollTop();
+
+console.log(positiontop);
+
+   if((positiontop > 15) && (positiontop < 267)){
+
+         $('#card-one').addClass('animated zoomInLeft');
+         $('#card-two').addClass('animated zoomInDown');
+         $('#card-three').addClass('animated zoomInRight');
+
+   }
+
+   if((positiontop > 423) && (positiontop < 707)){
+
+         $('#textanimate').addClass('animated rotateIn');
+
+   }
+
+   if(positiontop > 893){
+
+
+         $('#card-four').addClass('animated flipInX');
+         $('#card-five').addClass('animated fadeInDown');
+         $('#card-six').addClass('animated flipInX');
+
+
+   }
+
+
+});
+
+});
+
+var b = setTimeout(show, 1700);
+function show(){
+alert("Sir, We Hope You Will Get Pleasure By Visting Our Website.");
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
